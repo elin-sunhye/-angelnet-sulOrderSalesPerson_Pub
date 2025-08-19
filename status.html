@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
+        <!-- <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png"> -->
+        <title>술오더</title>
+        <meta name="description" content="술오더" />
+        <meta name="keywords" content="술오더" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./img/og.png" />
+        <meta property="og:title" content="술오더" />
+        <meta property="og:description" content="술오더" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/response.css" />
+        <link rel="stylesheet" href="./css/swiper.css" />
+        <script src="./js/swiper.8.4.7.js"></script>
+        <script src="./js/jquery.3.1.1.js"></script>
+    </head>
+
+    <body>
+        <div id="wrap">
+            <div id="header" class="header">
+                <a href="#" class="haeder__logo">
+                    <h2 class="layer-header__title">주문관리</h2>
+                </a>
+                <a href="./main.html" class="haeder__menu-btn" title="메뉴"></a>
+            </div>
+            <div id="container">
+                <div class="content">
+                    <!-- 상단 탭 -->
+                    <div class="page-tab">
+                        <ul class="page-tab__list">
+                            <li class="page-tab__item">
+                                <a href="./order.html" class="page-tab__link"
+                                    >주문</a
+                                >
+                            </li>
+                            <li class="page-tab__item">
+                                <a
+                                    href="./status.html"
+                                    class="page-tab__link current"
+                                    >조회</a
+                                >
+                            </li>
+                        </ul>
+                        <p>총 주문업소 3개</p>
+                    </div>
+                    <div class="fit-cont">
+                        <!-- 검색 조건 -->
+                        <div class="cont-block block-shadow-top search-box">
+                            <div class="product-basket__item">
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="store">날짜</label>
+                                        <input type="date" id="start-date" />
+                                        <span
+                                            class="search-filter__item search-filter__item--sep"
+                                            >~</span
+                                        >
+                                        <input type="date" id="end-date" />
+                                        <button
+                                            type="button"
+                                            class="btn-basic btn-small btn-main"
+                                        >
+                                            전일
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn-basic btn-small btn-main"
+                                        >
+                                            금일
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="store">구분</label>
+                                        <div class="open-select">
+                                            <button
+                                                type="button"
+                                                class="search-keyword__sort open-select__btn"
+                                            >
+                                                전체
+                                            </button>
+                                            <div class="hidden">
+                                                <select
+                                                    class="open-select__list"
+                                                    id="keyword-sort"
+                                                >
+                                                    <option value="">
+                                                        구분 선택
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cont-block block-shadow-top">
+                            <!-- <div class="list-header">
+                                <div class="list-header__left">
+                                    <p class="list-header__count">
+                                        총 <strong>3</strong>건
+                                    </p>
+                                </div>
+                                <div class="list-header__right">
+                                    <button class="list-header__sort">
+                                        최신순
+                                    </button>
+                                </div>
+                            </div> -->
+                            <div class="order-status">
+                                <ul class="order-status__list">
+                                    <li class="order-status__item">
+                                        <a
+                                            href="/status-detail.html"
+                                            class="order-status__link"
+                                        >
+                                            <p>
+                                                (주)아프로마트(수유점)<span
+                                                    class="store"
+                                                    >업소</span
+                                                >
+                                            </p>
+                                            <span>2025-07-18 (13:10)</span>
+                                        </a>
+                                        <div class="order-status__box">
+                                            <p>홍순천</p>
+                                            <button
+                                                class="order-status__status order-status__status--cancel"
+                                            >
+                                                취소가능
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="order-status__item">
+                                        <a
+                                            href="/status-detail.html"
+                                            class="order-status__link"
+                                        >
+                                            <p>(주)홈마트중곡</p>
+                                            <span>2025-07-18 (13:10)</span>
+                                        </a>
+                                        <div class="order-status__box">
+                                            <p>홍순천</p>
+                                            <button
+                                                class="order-status__status order-status__status--complete"
+                                            >
+                                                접수완료
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="order-status__item">
+                                        <a
+                                            href="/status-detail.html"
+                                            class="order-status__link"
+                                        >
+                                            <p>
+                                                K마트(도봉점)(주)와이에이치유통
+                                            </p>
+                                            <span>2025-07-16 (13:10)</span>
+                                        </a>
+                                        <div class="order-status__box">
+                                            <p>박종삼</p>
+                                            <button
+                                                class="order-status__status order-status__status--wait"
+                                            >
+                                                취소완료
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="order-status__item">
+                                        <a
+                                            href="/status-detail.html"
+                                            class="order-status__link"
+                                        >
+                                            <p>L-Mart(중계점)</p>
+                                            <span>2025-07-08 (13:10)</span>
+                                        </a>
+                                        <div class="order-status__box">
+                                            <p>박종삼</p>
+                                            <button
+                                                class="order-status__status order-status__status--wait"
+                                            >
+                                                취소완료
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            // 취소 패딩
+            // function setCancelPadding() {
+            //     $('.order-status__item').each(function () {
+            //         if ($(this).find('.btn-cancel').length > 0) {
+            //             $(this).addClass('cancel-padding');
+            //         }
+            //     });
+            // }
+
+            // $(document).ready(function () {
+            //     setCancelPadding();
+            // });
+        </script>
+        <script src="./js/common.js"></script>
+    </body>
+</html>

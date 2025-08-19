@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
+        <!-- <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png"> -->
+        <title>술오더</title>
+        <meta name="description" content="술오더" />
+        <meta name="keywords" content="술오더" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./img/og.png" />
+        <meta property="og:title" content="술오더" />
+        <meta property="og:description" content="술오더" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/response.css" />
+        <link rel="stylesheet" href="./css/swiper.css" />
+        <script src="./js/swiper.8.4.7.js"></script>
+        <script src="./js/jquery.3.1.1.js"></script>
+    </head>
+
+    <body>
+        <div id="wrap">
+            <div id="header" class="header">
+                <a href="#" class="haeder__logo">
+                    <h2 class="layer-header__title">주판계산서 상세</h2>
+                </a>
+                <a
+                    href="./abacus.html"
+                    class="haeder__back-btn"
+                    title="뒤로가기"
+                ></a>
+            </div>
+            <div id="container">
+                <div class="content">
+                    <div class="fit-cont">
+                        <div
+                            class="cont-block block-shadow-top block-shadow-btm"
+                        >
+                            <div class="order-status__item">
+                                <div class="order-status__link">
+                                    <p>K마트(도봉점)(주)와이에이치유통</p>
+                                    <span
+                                        >201-86-30289 | 일반 |
+                                        010-2345-1232</span
+                                    >
+                                </div>
+                                <div class="order-status__box">
+                                    <p>홍순천</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 검색 조건 -->
+                        <div class="cont-block block-shadow-btm search-box">
+                            <div class="product-basket__item">
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="store">날짜</label>
+                                        <input type="date" id="start-date" />
+                                        <span
+                                            class="search-filter__item search-filter__item--sep"
+                                            >~</span
+                                        >
+                                        <input type="date" id="end-date" />
+                                        <button
+                                            type="button"
+                                            class="btn-basic btn-small btn-main"
+                                        >
+                                            전월
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn-basic btn-small btn-main"
+                                        >
+                                            금월
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cont-block">
+                            <div class="order-status">
+                                <ul class="order-status__list">
+                                    <li class="order-status__item">
+                                        <div class="analysis-list__title">
+                                            <p>2025-07-15 (14:12)</p>
+                                            <div class="abacus-list__detail">
+                                                <p>
+                                                    <span>매입액</span>350,000
+                                                </p>
+                                                <p>
+                                                    <span>지급액</span>200,000
+                                                </p>
+                                                <p><span>잔액</span>150,000</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="order-status__item">
+                                        <div class="analysis-list__title">
+                                            <p>2025-07-18 (14:12)</p>
+                                            <div class="abacus-list__detail">
+                                                <p>
+                                                    <span>매입액</span>250,000
+                                                </p>
+                                                <p>
+                                                    <span>지급액</span>100,000
+                                                </p>
+                                                <p><span>잔액</span>150,000</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            // 취소 패딩
+            function setCancelPadding() {
+                $('.order-status__item').each(function () {
+                    if ($(this).find('.btn-cancel').length > 0) {
+                        $(this).addClass('cancel-padding');
+                    }
+                });
+            }
+
+            $(document).ready(function () {
+                setCancelPadding();
+            });
+
+            // 숫자 0 컬러 변경
+            function colorChange() {
+                // 모든 항목에 대해 검사
+                $('.detail-product-basket__right p').each(function () {
+                    let currentText = $(this).text().trim();
+
+                    if (currentText === '0') {
+                        $(this).addClass('gray');
+                    }
+                });
+            }
+            colorChange();
+        </script>
+        <script src="./js/common.js"></script>
+    </body>
+</html>
