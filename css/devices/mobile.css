@@ -12,7 +12,21 @@
 @media screen and (max-width: 400px) {
     /* 버튼 */
     .main-go > a {
-        width: 100%;
+        /* width: 100%; */
+        padding: 0 10px;
+    }
+
+    .main-go > a > p {
+        font-size: 16px;
+    }
+
+    .main-go > a > p span {
+        font-size: 12px;
+    }
+
+    .main-go > a > span {
+        /* height: 20px; */
+        display: none;
     }
     .basket-foot__data span {
         margin: 10px;
