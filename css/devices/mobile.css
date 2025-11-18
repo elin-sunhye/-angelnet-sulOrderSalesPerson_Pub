@@ -1,11 +1,14 @@
 @media screen and (max-width: 500px) {
-    .search-box .row .col:has(.btn-basic.btn-small.btn-main) {
+    .search-box:not(.single) .row .col:has(.btn-basic.btn-small.btn-main) {
         flex-wrap: wrap;
     }
-    .search-box .row .col:has(.btn-basic.btn-small.btn-main) input {
-        width: calc(100% - 40px);
+    .search-box:not(.single)
+        .row
+        .col:has(.btn-basic.btn-small.btn-main)
+        input {
+        width: calc(50% - 30px);
     }
-    .search-box .row .col .btn-basic.btn-small.btn-main {
+    .search-box:not(.single).row .col .btn-basic.btn-small.btn-main {
         width: 50%;
     }
 }

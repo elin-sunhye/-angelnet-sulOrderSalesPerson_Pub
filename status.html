@@ -40,14 +40,14 @@
                         <ul class="page-tab__list">
                             <li class="page-tab__item">
                                 <a href="./order.html" class="page-tab__link"
-                                    >주문</a
+                                    >주문하기</a
                                 >
                             </li>
                             <li class="page-tab__item">
                                 <a
                                     href="./status.html"
                                     class="page-tab__link current"
-                                    >조회</a
+                                    >주문조회</a
                                 >
                             </li>
                         </ul>
@@ -55,52 +55,20 @@
                     </div>
                     <div class="fit-cont">
                         <!-- 검색 조건 -->
-                        <div class="cont-block block-shadow-top search-box">
+                        <div
+                            class="cont-block block-shadow-top search-box single`"
+                        >
                             <div class="product-basket__item">
                                 <div class="row">
                                     <div class="col">
-                                        <label for="store">날짜</label>
-                                        <input type="date" id="start-date" />
-                                        <span
-                                            class="search-filter__item search-filter__item--sep"
-                                            >~</span
-                                        >
-                                        <input type="date" id="end-date" />
-                                        <button
-                                            type="button"
-                                            class="btn-basic btn-small btn-main"
-                                        >
-                                            전일
-                                        </button>
+                                        <label for="status-date">날짜</label>
+                                        <input type="date" id="status-date" />
                                         <button
                                             type="button"
                                             class="btn-basic btn-small btn-main"
                                         >
                                             금일
                                         </button>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <label for="store">구분</label>
-                                        <div class="open-select">
-                                            <button
-                                                type="button"
-                                                class="search-keyword__sort open-select__btn"
-                                            >
-                                                전체
-                                            </button>
-                                            <div class="hidden">
-                                                <select
-                                                    class="open-select__list"
-                                                    id="keyword-sort"
-                                                >
-                                                    <option value="">
-                                                        구분 선택
-                                                    </option>
-                                                </select>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -124,77 +92,68 @@
                                     <li class="order-status__item">
                                         <a
                                             href="/status-detail.html"
-                                            class="order-status__link"
+                                            class="status__link"
                                         >
-                                            <p>
-                                                (주)아프로마트(수유점)<span
-                                                    class="store"
-                                                    >업소</span
-                                                >
-                                            </p>
-                                            <span>2025-07-18 (13:10)</span>
+                                            <p>(주)아프로마트(수유점)</p>
+                                            <div class="abacus-list__detail">
+                                                <p>
+                                                    <span>13:00 술오더</span>
+                                                </p>
+                                                <p>
+                                                    <span>품목수 : 8</span>
+                                                </p>
+                                            </div>
                                         </a>
-                                        <div class="order-status__box">
-                                            <p>홍순천</p>
-                                            <button
-                                                class="order-status__status order-status__status--cancel"
-                                            >
-                                                취소가능
-                                            </button>
-                                        </div>
                                     </li>
                                     <li class="order-status__item">
                                         <a
                                             href="/status-detail.html"
-                                            class="order-status__link"
+                                            class="status__link"
                                         >
                                             <p>(주)홈마트중곡</p>
-                                            <span>2025-07-18 (13:10)</span>
+                                            <div class="abacus-list__detail">
+                                                <p>
+                                                    <span>11:40 술오더</span>
+                                                </p>
+                                                <p>
+                                                    <span>품목수 : 15</span>
+                                                </p>
+                                            </div>
                                         </a>
-                                        <div class="order-status__box">
-                                            <p>홍순천</p>
-                                            <button
-                                                class="order-status__status order-status__status--complete"
-                                            >
-                                                접수완료
-                                            </button>
-                                        </div>
                                     </li>
                                     <li class="order-status__item">
                                         <a
                                             href="/status-detail.html"
-                                            class="order-status__link"
+                                            class="status__link"
                                         >
                                             <p>
                                                 K마트(도봉점)(주)와이에이치유통
                                             </p>
-                                            <span>2025-07-16 (13:10)</span>
+                                            <div class="abacus-list__detail">
+                                                <p>
+                                                    <span>09:10 OB BEES</span>
+                                                </p>
+                                                <p>
+                                                    <span>품목수 : 8</span>
+                                                </p>
+                                            </div>
                                         </a>
-                                        <div class="order-status__box">
-                                            <p>박종삼</p>
-                                            <button
-                                                class="order-status__status order-status__status--wait"
-                                            >
-                                                취소완료
-                                            </button>
-                                        </div>
                                     </li>
                                     <li class="order-status__item">
                                         <a
                                             href="/status-detail.html"
-                                            class="order-status__link"
+                                            class="status__link"
                                         >
                                             <p>L-Mart(중계점)</p>
-                                            <span>2025-07-08 (13:10)</span>
+                                            <div class="abacus-list__detail">
+                                                <p>
+                                                    <span>09:00 술오더</span>
+                                                </p>
+                                                <p>
+                                                    <span>품목수 : 8</span>
+                                                </p>
+                                            </div>
                                         </a>
-                                        <div class="order-status__box">
-                                            <p>박종삼</p>
-                                            <button
-                                                class="order-status__status order-status__status--wait"
-                                            >
-                                                취소완료
-                                            </button>
-                                        </div>
                                     </li>
                                 </ul>
                             </div>

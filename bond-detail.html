@@ -61,25 +61,70 @@
                             <div class="product-basket__item">
                                 <div class="row">
                                     <div class="col">
-                                        <label for="store">날짜</label>
-                                        <input type="date" id="start-date" />
+                                        <div class="search-filter__row">
+                                            <div class="search-filter__item">
+                                                <button
+                                                    type="button"
+                                                    class="search-filter__btn btn-filter"
+                                                >
+                                                    당일
+                                                </button>
+                                            </div>
+                                            <div class="search-filter__item">
+                                                <button
+                                                    type="button"
+                                                    class="search-filter__btn btn-filter"
+                                                >
+                                                    1주
+                                                </button>
+                                            </div>
+                                            <div class="search-filter__item">
+                                                <button
+                                                    type="button"
+                                                    class="search-filter__btn btn-filter"
+                                                >
+                                                    1개월
+                                                </button>
+                                            </div>
+                                            <div class="search-filter__item">
+                                                <button
+                                                    type="button"
+                                                    class="search-filter__btn btn-filter current"
+                                                >
+                                                    3개월
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input
+                                            type="date"
+                                            id="start-date"
+                                            style="width: calc(50% - 11px)"
+                                        />
                                         <span
                                             class="search-filter__item search-filter__item--sep"
                                             >~</span
                                         >
-                                        <input type="date" id="end-date" />
-                                        <button
-                                            type="button"
-                                            class="btn-basic btn-small btn-main"
+                                        <input
+                                            type="date"
+                                            id="end-date"
+                                            style="width: calc(50% - 11px)"
+                                        />
+                                        <div
+                                            class="btn-box"
+                                            style="justify-content: center"
                                         >
-                                            전월
-                                        </button>
-                                        <button
-                                            type="button"
-                                            class="btn-basic btn-small btn-main"
-                                        >
-                                            금월
-                                        </button>
+                                            <button
+                                                type="button"
+                                                class="btn-basic btn-small btn-main"
+                                                style="flex: unset; width: 50px"
+                                            >
+                                                조회
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

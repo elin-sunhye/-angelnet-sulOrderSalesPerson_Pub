@@ -280,6 +280,17 @@
     border: 1px solid #dfdfdf;
     border-radius: 5px;
 }
+.search-box .row .col .btn-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+.search-box .row .col .btn-box button {
+    flex: unset;
+    width: 80px !important;
+}
 
 /* order ----------------- */
 .page-tab {
@@ -991,6 +1002,7 @@ input.product-basket__quan-field.click {
 .search-filter__row {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .search-filter__row + .search-filter__row {
@@ -1280,13 +1292,19 @@ input.product-basket__quan-field.click {
     font-weight: 600;
 }
 
-.order-status__link {
+.status__link {
+    width: 100%;
+}
+
+.order-status__link,
+.status__link {
     color: #333;
     font-size: 18px;
     font-weight: bold;
 }
 
-.order-status__link span {
+.order-status__link span,
+.status__link span {
     font-size: 13px;
     color: #999;
 }
@@ -1340,6 +1358,77 @@ input.product-basket__quan-field.click {
 .bond-status__item .analysis-list__title {
     display: flex;
     justify-content: space-between;
+}
+.bond-list__detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+.bond-list__detail p {
+    width: 50%;
+    font-size: 14px;
+    font-weight: bold;
+}
+.bond-list__detail p:last-of-type {
+    text-align: right;
+}
+.bond-list__detail p span {
+    margin-right: 3px;
+    color: #999;
+    font-size: 13px;
+}
+
+/* 대여금관리 */
+.rental-list__detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+.rental-list__detail p {
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+}
+.rental-list__detail p:last-of-type {
+    text-align: right;
+}
+.search-box .product-basket__item .calendar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.search-box .product-basket__item .calendar button {
+    font-size: 20px;
+    opacity: 0.5;
+}
+.search-box .product-basket__item .calendar p {
+    line-height: 20px;
+    font-weight: bold;
+}
+.rental-fee-list__detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+.rental-fee-list__detail p {
+    width: 50%;
+    font-size: 14px;
+    font-weight: bold;
+}
+.rental-fee-list__detail div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 48%;
+}
+.rental-fee-list__detail div:first-of-type {
+    justify-content: flex-start;
+}
+.rental-fee-list__detail div:last-of-type {
+    justify-content: flex-end;
 }
 
 /* 조회 상세 */
