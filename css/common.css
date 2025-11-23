@@ -232,6 +232,11 @@ input::-webkit-date-and-time-value {
     border-color: #25398f;
 }
 
+.btn-red {
+    background: #a34546;
+    border-color: #a34546;
+}
+
 .btn-memo {
     flex: 0 0 74px;
     background: #efefef;
