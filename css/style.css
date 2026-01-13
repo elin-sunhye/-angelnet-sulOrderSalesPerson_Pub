@@ -1380,6 +1380,55 @@ input.product-basket__quan-field.click {
   font-size: 13px;
 }
 
+/* 20260113 수정 */
+/* 채권관리 상세 */
+.bond-status__item__address {
+  justify-content: flex-start !important;
+  gap: 10px;
+}
+.bond-status__item__address p {
+  display: inline-block;
+  width: unset !important;
+  text-align: left !important;
+  color: #999;
+}
+.bond-detail-item {
+  width: calc(100% - var(--base-page-padding) * 2);
+  border-bottom: 3px solid #eee;
+  padding: 7px 0;
+  margin: auto;
+}
+.bond-detail-item .top,
+.bond-detail-item .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bond-detail-item .top {
+  font-size: 16px;
+  font-weight: bold;
+}
+.bond-detail-item .bottom {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 600;
+}
+.bond-detail-item .bottom .row {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin-top: 5px;
+}
+.bond-detail-item .bottom .row p:first-of-type {
+  width: 50px;
+}
+.bond-detail-item .bottom .row p:nth-of-type(2) {
+  width: 100px;
+  text-align: right;
+}
+/* 여기까지 */
+
 /* 대여금관리 */
 .rental-list__detail {
   display: flex;
@@ -1395,7 +1444,6 @@ input.product-basket__quan-field.click {
 .rental-list__detail p:last-of-type {
   text-align: right;
 }
-/* 20260108 수정 */
 .search-box.calendar {
   display: flex;
   justify-content: center;
@@ -1403,11 +1451,12 @@ input.product-basket__quan-field.click {
   margin: 20px 0 10px;
 }
 .search-box.calendar button {
-  font-size: 20px;
+  font-size: 30px;
   opacity: 0.5;
 }
 .search-box.calendar p {
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 30px;
   font-weight: bold;
 }
 .bond-status__item:has(.rental-fee-list__detail) {
@@ -1431,6 +1480,7 @@ input.product-basket__quan-field.click {
   justify-content: space-between;
   align-items: center;
 }
+/* 20260113 수정 */
 .rental-fee-list__detail p {
   width: 50%;
   font-size: 13px;
@@ -1438,20 +1488,25 @@ input.product-basket__quan-field.click {
 }
 .rental-fee-list__detail div {
   display: flex;
-  align-items: center;
+  align-items: right;
   gap: 10px;
-  width: 48%;
 }
 .rental-fee-list__detail div:first-of-type {
   justify-content: flex-start;
+  width: 48%;
+}
+.rental-fee-list__detail div:first-of-type p:first-of-type {
+  width: 70%;
+}
+.rental-fee-list__detail div:first-of-type p:last-of-type {
+  width: 30%;
+  text-align: cener;
 }
 .rental-fee-list__detail div:last-of-type {
   justify-content: flex-end;
+  width: 51%;
 }
-.rental-fee-list__detail div:last-of-type p {
-  text-align: right;
-}
-/* 여기까지 */
+/* 여기ㄷ까지 */
 
 /* 조회 상세 */
 .ordered-detail_title {

@@ -1,65 +1,64 @@
 @media screen and (max-width: 500px) {
-    .search-box:not(.single) .row .col:has(.btn-basic.btn-small.btn-main) {
-        flex-wrap: wrap;
-    }
-    .search-box:not(.single)
-        .row
-        .col:has(.btn-basic.btn-small.btn-main)
-        input {
-        width: calc(50% - 30px);
-    }
-    .search-box:not(.single).row .col .btn-basic.btn-small.btn-main {
-        width: 50%;
-    }
+  .search-box:not(.single) .row .col:has(.btn-basic.btn-small.btn-main) {
+    flex-wrap: wrap;
+  }
+  /* 20260113 수정 */
+  .search-box:not(.single) .row .col:has(.btn-basic.btn-small.btn-main) input {
+    width: calc(100% - 105px);
+  }
+  /* 여기까지 */
+  .search-box:not(.single).row .col .btn-basic.btn-small.btn-main {
+    width: 36px;
+  }
 }
 @media screen and (max-width: 400px) {
-    /* 버튼 */
-    .main-go > a {
-        /* width: 100%; */
-        padding: 0 10px;
-    }
+  /* 버튼 */
+  .main-go > a {
+    /* width: 100%; */
+    padding: 0 10px;
+  }
 
-    .main-go > a > p {
-        font-size: 16px;
-    }
+  .main-go > a > p {
+    font-size: 16px;
+  }
 
-    .main-go > a > p span {
-        font-size: 12px;
-    }
+  .main-go > a > p span {
+    font-size: 12px;
+  }
 
-    .main-go > a > span {
-        /* height: 20px; */
-        display: none;
-    }
-    .basket-foot__data span {
-        margin: 10px;
-    }
+  .main-go > a > span {
+    /* height: 20px; */
+    display: none;
+  }
+  .basket-foot__data span {
+    margin: 10px;
+  }
 }
 @media screen and (max-width: 364px) {
-    /* .basket-foot__item {
+  /* .basket-foot__item {
         margin-right: 15px;
     } */
-    .basket-foot__data span {
-        margin: 3px;
-    }
+  .basket-foot__data span {
+    margin: 3px;
+  }
 }
 @media screen and (max-width: 349px) {
-    /* .basket-foot__item {
+  /* .basket-foot__item {
         margin-right: 5px;
     } */
-    .basket-foot__data span {
-        margin: 1px;
-    }
+  .basket-foot__data span {
+    margin: 1px;
+  }
 
-    .detail-product-basket__right p,
-    .product-basket__quan-field {
-        width: 60px;
-        font-size: 16px;
-    }
+  .detail-product-basket__right p,
+  .product-basket__quan-field {
+    width: 60px;
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 305px) {
-    .basket-foot__item {
-        margin-right: 5px;
-    }
+  .basket-foot__item {
+    margin-right: 5px;
+  }
 }
