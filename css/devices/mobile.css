@@ -2,11 +2,9 @@
   .search-box:not(.single) .row .col:has(.btn-basic.btn-small.btn-main) {
     flex-wrap: wrap;
   }
-  /* 20260113 수정 */
   .search-box:not(.single) .row .col:has(.btn-basic.btn-small.btn-main) input {
     width: calc(100% - 105px);
   }
-  /* 여기까지 */
   .search-box:not(.single).row .col .btn-basic.btn-small.btn-main {
     width: 36px;
   }
