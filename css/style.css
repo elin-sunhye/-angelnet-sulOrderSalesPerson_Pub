@@ -1607,6 +1607,9 @@ input.product-basket__quan-field.click {
 .abacus-list .product-basket__right.payment {
   background-color: #eb5a41;
 } */
+.abacus-list .product-basket__option {
+  font-size: 12px;
+}
 /* 끝 */
 .abacus-list__detail {
   display: flex;
