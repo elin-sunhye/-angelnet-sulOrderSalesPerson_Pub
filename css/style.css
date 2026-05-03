@@ -1592,17 +1592,21 @@ input.product-basket__quan-field.click {
 
 /* <!-- 20260430 수정 --> */
 /* 주판계산서 */
-.abacus-list .product-basket__right {
-  padding: 5px 10px;
-  border-radius: 4px;
-  color: white;
+.abacus-list .order-product-title {
+  font-size: 15px;
 }
-.abacus-list .product-basket__right.complete {
+.abacus-list .product-basket__right {
+  /* padding: 5px 10px; */
+  border-radius: 4px;
+  font-size: 15px;
+  /* color: white; */
+}
+/* .abacus-list .product-basket__right.complete {
   background-color: #25398f;
 }
 .abacus-list .product-basket__right.payment {
   background-color: #eb5a41;
-}
+} */
 /* 끝 */
 .abacus-list__detail {
   display: flex;
