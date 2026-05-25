@@ -24,13 +24,11 @@
     font-size: 12px;
   }
 
-  /* <!-- 20260430 수정 --> */
   .main-go > a > span {
     height: 40%;
     margin-top: 0;
     /* display: none; */
   }
-  /* 끝 */
   .basket-foot__data span {
     margin: 10px;
   }

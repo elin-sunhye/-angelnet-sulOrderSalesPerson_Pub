@@ -104,7 +104,6 @@
   color: #333;
   font-weight: 600;
 }
-/* <!-- 20260430 수정 --> */
 .alert-title {
   display: flex;
   align-items: center;
@@ -120,7 +119,6 @@
   width: 100%;
   height: auto;
 }
-/* 끝 */
 
 /* 주류주문 버튼 */
 .main-order {
@@ -204,11 +202,9 @@
   line-height: 1.2;
 }
 
-/* <!-- 20260430 수정 --> */
 .main-go > a > span {
   height: 40px;
 }
-/* 여기까지 */
 
 .main-go > a > span img {
   height: 100%;
@@ -1590,7 +1586,6 @@ input.product-basket__quan-field.click {
   margin-left: 10px;
 }
 
-/* <!-- 20260430 수정 --> */
 /* 주판계산서 */
 .abacus-list .order-product-title {
   font-size: 15px;
@@ -1610,7 +1605,6 @@ input.product-basket__quan-field.click {
 .abacus-list .product-basket__option {
   font-size: 12px;
 }
-/* 끝 */
 .abacus-list__detail {
   display: flex;
   justify-content: space-between;

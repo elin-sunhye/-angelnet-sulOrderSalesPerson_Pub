@@ -145,7 +145,6 @@ var mainSlider = new Swiper(
   },
 );
 
-// <!-- 20260430 수정 -->
 // 글자수에 따라 폰트 사이즈 조정
 function fontSz() {
   $('.order-product-title, .analysis-list__title').each(function () {
@@ -155,7 +154,6 @@ function fontSz() {
     }
   });
 }
-// 끝
 
 fontSz();
 
